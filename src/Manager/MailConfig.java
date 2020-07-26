@@ -16,10 +16,6 @@ public class MailConfig {
 
     public static final int SSL_PORT = 465; // Port for SSL
 
-    public static final String APP_EMAIL = "nguyencuong0408@gmail.com"; // your email
-
-    public static final String APP_PASSWORD = "uklocfjogdlzxhzx"; // your password
-
     public static final String MAILCATCHER_HOST_NAME = "127.0.0.1";
 
     public static final int MAILCATCHER_SSL_PORT = 1025; // Port for SSL

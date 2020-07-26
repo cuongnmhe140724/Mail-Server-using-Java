@@ -1,7 +1,6 @@
 package Manager;
 
 
-import Manager.MailConfig;
 import java.util.Properties;
 import javax.mail.Authenticator;
 import javax.mail.Message;

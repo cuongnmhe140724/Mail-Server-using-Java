@@ -5,12 +5,8 @@ import Manager.ReceiveMail;
 import java.awt.Toolkit;
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javafx.stage.FileChooser;
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.Multipart;
@@ -428,7 +424,7 @@ public class MailApps extends javax.swing.JFrame {
                 for (int i = 0; i < Integer.parseInt(txtSpam.getText()); i++) {
                     sm.sendMail();
                 }
-                System.out.println("Send mail " + receiveMail + "success.");
+                System.out.println("Send mail " + receiveMail + " success.");
             }
         } catch (Exception e) {
         }
@@ -453,6 +449,7 @@ public class MailApps extends javax.swing.JFrame {
                 dtm.insertRow(dtm.getRowCount(), new Object[]{subject, from, text});
             }
         } catch (MessagingException e) {
+            System.out.println(e.getMessage());
         }
     }
     
